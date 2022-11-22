@@ -181,7 +181,7 @@ const splitter = function (id) {
 
 const urlChange = function (button, qry) {
     button.addEventListener('click', function () {
-        url = 'http://localhost:8000/modal/' + qry;
+        url = location.href + 'modal/' + qry;
         location.href = url;
     });
 }
