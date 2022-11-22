@@ -8,7 +8,7 @@ const db = require('./dbms');
 const { query } = require('express');
 const router = express.Router();
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 db.connect();
 
